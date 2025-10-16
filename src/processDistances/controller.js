@@ -28,6 +28,7 @@ class ProcessDistancesRPAController {
           { _id: { $in: queueEntrys.map(q => q._id) } },
           { $set: { processing: true } }
         );
+        
 
       for (const queueEntry of queueEntrys) {
 
